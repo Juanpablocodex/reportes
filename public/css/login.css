@@ -1,0 +1,116 @@
+/* estilos.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho ajustado */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #061530;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #061530;
+}
+
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #061530;
+}
+
+.input-icon input[type="text"],
+.input-icon input[type="email"],
+.input-icon input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Ajustar padding para mayor tamaño */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Aumentar tamaño de fuente */
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+button {
+    padding: 15px 20px; /* Aumentar padding */
+    background-color: #044be2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; /* Aumentar tamaño de fuente */
+}
+
+button:hover {
+    background-color: #061530;
+}
+
+.btn-register {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px 20px; /* Aumentar padding */
+    background-color: #044be2;
+    color: #ffffff;
+    border: 2px solid #044be2;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px; /* Aumentar tamaño de fuente */
+}
+
+.btn-register:hover {
+    background-color: #061530;
+    color: #ffffff;
+}
+
+/* custom.css */
+
+.btn-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #044be2;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-home:hover {
+    background-color: #061530;
+    color: #ffffff;
+}
+

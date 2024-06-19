@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #061530;
+}
+
+header .logo {
+    width: 150px; /* Aumentar el tamaño del logo */
+    height: auto;
+}
+
+fieldset {
+    border: none;
+    border-top: 2px solid #333a50;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #061530;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Añadir espacio entre los botones */
+}
+
+.guardar-button, .cancelar-button {
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.guardar-button {
+    background-color: #061530;
+    color: white;
+    border: none;
+}
+
+.guardar-button:hover {
+    background-color: #333a50;
+}
+
+.cancelar-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+
+.cancelar-button:hover {
+    background-color: #c9302c;
+}
