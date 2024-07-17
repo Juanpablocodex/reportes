@@ -10,7 +10,7 @@
     <div class="form-container">
         <header>
             <h1>Editar Reporte</h1>
-            <img src="{{ asset('CSS/sesesp.png') }}" alt="Logo" class="logo">
+            <img src="{{ asset('CSS/ieu.png') }}" alt="Logo" class="logo">
         </header>
         <form action="{{ route('reportes.update', $reporte->id) }}" method="POST">
             @csrf
@@ -23,13 +23,13 @@
                 <input type="date" id="fecha" name="fecha" value="{{ $reporte->fecha }}" readonly>
             </fieldset>
             <fieldset>
-                <legend>INFORMACIÓN DEL DISPOSITIVO</legend>
-                <label for="nombre_camara">Nombre de la cámara</label>
+                <legend>INFORMACIÓN DEL PROBLEMA</legend>
+                <label for="nombre_camara">¿Cual es el problema que deseas reportar?</label>
                 <input type="text" id="nombre_camara" name="nombre_camara" value="{{ $reporte->nombre_camara }}">
             </fieldset>
             <fieldset>
-                <legend>INFORMACIÓN ADICIONAL</legend>
-                <label for="incidente">Incidente</label>
+                <legend>INCIDENTE</legend>
+                <label for="incidente">Ingresa el salon o el edificio</label>
                 <input type="text" id="incidente" name="incidente" value="{{ $reporte->incidente }}">
                 <label for="descripcion">Descripción del problema</label>
                 <textarea id="descripcion" name="descripcion">{{ $reporte->descripcion }}</textarea>

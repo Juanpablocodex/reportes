@@ -191,7 +191,7 @@
     <div class="content">
         <div id="dashboard-section" class="section">
             <h1>Bienvenido al Panel</h1>
-            <img src="{{ asset('CSS/tlax.png') }}" alt="Welcome Image" class="welcome-image">
+            <img src="{{ asset('CSS/ieu.png') }}" alt="Welcome Image" class="welcome-image">
         </div>
         <div id="roles-section" class="section">
             <h1>Roles</h1>
@@ -212,9 +212,9 @@
                                 <td>{{ $user->username }}</td>
                                 <td>
                                     <select name="role" onchange="updateRole({{ $user->id }}, this.value)">
-                                        <option value="sistemas" {{ $user->role == 'sistemas' ? 'selected' : '' }}>Sistemas</option>
-                                        <option value="video_vigilancia" {{ $user->role == 'video_vigilancia' ? 'selected' : '' }}>Video Vigilancia</option>
-                                        <option value="jefe_depto" {{ $user->role == 'jefe_depto' ? 'selected' : '' }}>Jefe Depto</option>
+                                        <option value="sistemas" {{ $user->role == 'sistemas' ? 'selected' : '' }}>Estudiante</option>
+                                        <option value="video_vigilancia" {{ $user->role == 'video_vigilancia' ? 'selected' : '' }}>Profesor</option>
+                                        <option value="jefe_depto" {{ $user->role == 'jefe_depto' ? 'selected' : '' }}>Administrativo</option>
                                     </select>
                                 </td>
                                 <td>
@@ -243,7 +243,7 @@
                                 <td>{{ $reporte->id }}</td>
                                 <td>
                                     <span class="status-circle 
-                                        @if($reporte->status == 'funcionando') status-funcionando 
+                                        @if($reporte->status == 'solucionado') status-solucionado
                                         @elseif($reporte->status == 'pendiente') status-pendiente 
                                         @elseif($reporte->status == 'sin respuesta') status-sin-respuesta 
                                         @endif">
@@ -300,7 +300,7 @@
                                         @csrf
                                         @method('PUT')
                                         <select name="status" onchange="this.form.submit()">
-                                            <option value="funcionando" {{ $reporte->status == 'funcionando' ? 'selected' : '' }}>Funcionando</option>
+                                            <option value="solucionado" {{ $reporte->status == 'solucionado' ? 'selected' : '' }}>Solucionado</option>
                                             <option value="pendiente" {{ $reporte->status == 'pendiente' ? 'selected' : '' }}>Pendiente</option>
                                             <option value="sin respuesta" {{ $reporte->status == 'sin respuesta' ? 'selected' : '' }}>Sin Respuesta</option>
                                         </select>

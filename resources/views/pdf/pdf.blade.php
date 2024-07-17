@@ -50,11 +50,11 @@
                     <td>{{ $reporte->fecha }}</td>
                 </tr>
                 <tr>
-                    <th>Nombre de Cámara</th>
+                    <th>Problema Identificado</th>
                     <td>{{ $reporte->nombre_camara }}</td>
                 </tr>
                 <tr>
-                    <th>Incidente</th>
+                    <th>Salon o Edificio</th>
                     <td>{{ $reporte->incidente }}</td>
                 </tr>
                 <tr>

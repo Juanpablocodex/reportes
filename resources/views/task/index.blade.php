@@ -23,7 +23,7 @@
                         href="{{ route('login') }}"
                         class="btn"
                     >
-                        Acceder
+                        Iniciar Sesion
                     </a>
 
                     @if (Route::has('register'))
@@ -39,8 +39,8 @@
         @endif
     </div>
     <div class="contenido">
-        <img src="{{ asset('CSS/sesesp.png') }}" alt="Logo" class="logo">
-        <h1>Plataforma de video vigilancia C5i</h1>
+        <img src="{{ asset('CSS/ieu.png') }}" alt="Logo" class="logo">
+        <h1>Plataforma de Tickets IEU</h1>
         
         
     </div>
